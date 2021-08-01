@@ -1,0 +1,39 @@
+.footer {
+  padding: 20px 0 120px 0;
+  text-align: center;
+
+  @include mobile {
+    padding: 20px 0 40px 0;
+  }
+
+  &__social {
+    margin-bottom: 40px;
+
+    i {
+      font-size: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transform: translatey(-2px);
+      }
+    }
+  }
+
+  &__attri {
+    p {
+      font-size: 14px;
+      letter-spacing: normal;
+      line-height: 1.5;
+
+      a {
+        color: $dark;
+        text-decoration: underline;
+      }
+    }
+  }
+}

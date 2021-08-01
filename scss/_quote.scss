@@ -1,0 +1,16 @@
+.quote {
+  max-width: 100%;
+  text-align: center;
+  background-color: #fbfbfb;
+  scroll-snap-type: y mandatory;
+  position: relative;
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+  }
+}

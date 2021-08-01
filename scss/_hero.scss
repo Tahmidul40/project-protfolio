@@ -1,0 +1,46 @@
+.hero {
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 970px;
+    }
+
+    h2 {
+      margin-top: 60px;
+
+      @include mobile {
+        margin-top: 15px;
+      }
+
+      span {
+        margin-right: 60px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include laptop {
+          margin-right: 30px;
+        }
+
+        @include tablet {
+          margin-right: 15px;
+        }
+
+        @include mobile {
+          margin-right: 10px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

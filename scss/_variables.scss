@@ -1,0 +1,32 @@
+// colors ----------//
+$light: #ffffff;
+$dark: #212121;
+$black: #000000;
+$btn: #505050;
+$btnHover: #eeeeee;
+$mouse: #818181;
+
+// media query
+@mixin desktop {
+  @media (max-width: 1285.98px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1024.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 540.98px) {
+    @content;
+  }
+}

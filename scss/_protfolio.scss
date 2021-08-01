@@ -1,0 +1,65 @@
+.protfolio {
+  padding: 240px 0 0;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 175px;
+  }
+
+  @include tablet {
+    padding: 140px 0 0;
+
+    h2 {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__top,
+  &__end {
+    height: 1285px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 155px;
+
+    @include laptop {
+      height: 1000px;
+      margin-bottom: 50px;
+    }
+
+    @include tablet {
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    max-width: 540px;
+    padding-right: 20px;
+
+    @include tablet {
+      margin-bottom: 100px;
+      padding-right: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    h2 {
+      margin: 50px 0;
+    }
+  }
+
+  &__middle {
+    padding-bottom: 160px;
+
+    @include tablet {
+      padding-bottom: 160px;
+    }
+
+    h2 {
+      margin: 50px 0;
+    }
+  }
+}
